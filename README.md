@@ -7,7 +7,7 @@ Intro Big Data Analytics
 
 # 🎓 Student Evaluation Analysis – Turkiye Dataset
 
-## 📊 Sector
+##  Sector
 **Education**
 
 ---
@@ -16,7 +16,7 @@ Turkiye Student Performance Prediction Based on Course Evaluation Data
 
 ```
 ```
-## 🎯 Problem Statement
+##  Problem Statement
 > How can we predict course satisfaction and identify patterns related to students repeating courses based on their feedback and demographics?
 
 This project analyzes a dataset from a university in Turkiye. It uses 28 question-based evaluation responses, plus metadata such as attendance, course difficulty, and instructor.
@@ -26,7 +26,7 @@ Understanding the factors that influence student academic success is crucial for
 
 
 
-## 🧠 Objectives
+##  Objectives
 - Clean and preprocess a structured dataset
 - Predict student course repetition using ML models
 - Visualize trends in satisfaction and performance
@@ -35,7 +35,7 @@ Understanding the factors that influence student academic success is crucial for
 
 ---
 
-## 📂 Dataset Details
+##  Dataset Details
 
 - **Title**: Turkiye Student Evaluation
 - **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Turkiye+Student+Evaluation)
@@ -46,37 +46,36 @@ Understanding the factors that influence student academic success is crucial for
 
 ---
 
-## 🔍 Python Analysis (Visual Studio Code)
+##  Python Analysis (Visual Studio Code)
 
-- ✅ Data cleaning (missing values, encoding)
-- ✅ Normalization (Q1–Q28)
-- ✅ Target variable created: `Repeat Count → target (0 or 1)`
-- ✅ Machine learning models: Logistic Regression, Decision Tree
-- ✅ Model evaluation: Accuracy, confusion matrix, classification report
-
----
-
-## 📈 Power BI Dashboard Highlights
-
-- 🎯 Repeats by Instructor (Bar Chart)
-- 📊 Attendance vs Repeat Count (Column Chart)
-- 📈 Average Satisfaction by Class (Line Chart)
-- 🧠 AI Visual: Key Influencers to explain `Repeat Count`
-- 🎛️ Slicers: Instructor, Class, Attendance, Difficulty
-- 💬 Tooltips for extra hover information
-- 📦 Cards: Total Students, Avg Satisfaction, Total Repeats
+-  Data cleaning (missing values, encoding)
+-  Normalization (Q1–Q28)
+-  Target variable created: `Repeat Count → target (0 or 1)`
+-  Machine learning models: Logistic Regression, Decision Tree
+-  Model evaluation: Accuracy, confusion matrix, classification report
 
 ---
 
-## ✨ Innovative Features Used
+##  Power BI Dashboard Highlights
+
+-  Repeats by Instructor (Bar Chart)
+-  Attendance vs Repeat Count (Column Chart)
+-  Average Satisfaction by Class (Line Chart)
+-  AI Visual: Key Influencers to explain `Repeat Count`
+-  Slicers: Instructor, Class, Attendance
+-  Tooltips for extra hover information
+-  Cards: Class,Attendence, Instructor, Difficulty_encoded
+
+---
+
+##  Innovative Features Used
 - `AvgSatisfaction` as a calculated DAX measure
-- AI Visual: **Key Influencers**
-- Custom **Tooltips** to show dynamic info
+- Custom **Tooltips** to show zoom slider
 - Slicers for interactive analysis
 
 ---
 
-## 📎 Files in this Repository
+##  Files in this Repository
 
 | File Name | Description |
 |-----------|-------------|
