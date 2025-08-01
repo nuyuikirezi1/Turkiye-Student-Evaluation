@@ -1,2 +1,6 @@
 # Turkiye-Student-Evaluation
-Big Data Analytics 
+Intro Big Data Analytics 
+
+|Name                             | ID   |
+|Nuyu Ikirezi Amathia Florentine  |27571 |
+
