@@ -7,24 +7,24 @@ Intro Big Data Analytics
 
 # 🎓 Student Evaluation Analysis – Turkiye Dataset
 
-## 📁 Project Overview
-This capstone project was developed for the course **INSY 8413: Introduction to Big Data Analytics** (2024–2025, Sem III) under the guidance of **Lecturer Eric Maniraguha**.
-
-The goal is to use **Big Data Analytics** techniques to analyze student evaluation data, uncover insights, and predict outcomes related to **student satisfaction and course repeat rates** using Python and Power BI.
-
----
-
 ## 📊 Sector
 **Education**
 
 ---
+## Problem Title:
+Turkiye Student Performance Prediction Based on Course Evaluation Data
 
+```
+```
 ## 🎯 Problem Statement
 > How can we predict course satisfaction and identify patterns related to students repeating courses based on their feedback and demographics?
 
 This project analyzes a dataset from a university in Turkiye. It uses 28 question-based evaluation responses, plus metadata such as attendance, course difficulty, and instructor.
 
+Understanding the factors that influence student academic success is crucial for improving learning outcomes. In this project, we analyze a dataset of student evaluations from a university in Turkey. The dataset includes attributes such as attendance, difficulty level, number of classes, and various course-related ratings. The goal is to predict the success or failure of a student in a course and identify the most significant factors affecting their performance.
 ---
+
+
 
 ## 🧠 Objectives
 - Clean and preprocess a structured dataset
