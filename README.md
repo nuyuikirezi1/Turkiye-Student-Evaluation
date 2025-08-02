@@ -229,6 +229,8 @@ TotalStudents = COUNTROWS(cleaned_student_evaluation)
 - Slicers for interactive analysis
 
 ---
+## **All dashboard**
+![dash](https://github.com/user-attachments/assets/46d56d1f-b8c6-43c1-a6f0-49613cd4c3d3)
 
 ##  Files in this Repository
 
