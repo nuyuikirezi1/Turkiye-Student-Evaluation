@@ -193,9 +193,13 @@ nb.repeat → Repeat Count
   ![p5](https://github.com/user-attachments/assets/5eed6291-46f5-4f22-afb7-5c09791b5759)
 
 -  Tooltips for zoom slider
+
+  
   ![too](https://github.com/user-attachments/assets/b8903667-4fe6-4efb-ae1d-283a350420e3)
 
 -  Cards: Class,Attendence, Instructor, Difficulty_encoded
+
+-  
   ![car](https://github.com/user-attachments/assets/deaf1cc0-baf4-4752-8ea9-3a613ae89571)
 -  Key influencers
   ![p7](https://github.com/user-attachments/assets/e680f642-5f99-45ce-9ff5-5f98ba68402a)
