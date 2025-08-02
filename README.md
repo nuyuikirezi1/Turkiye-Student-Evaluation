@@ -5,7 +5,7 @@ Intro Big Data Analytics
 |---------------------------------|------|
 |Nuyu Ikirezi Amathia Florentine  |27571 |
 
-# 🎓 Student Evaluation Analysis – Turkiye Dataset
+# Student Evaluation Analysis – Turkiye Dataset
 
 ##  Sector
 **Education**
@@ -49,9 +49,9 @@ Understanding the factors that influence student academic success is crucial for
 
 ##  Python Analysis (Visual Studio Code)
 
--  Data cleaning (missing values, encoding)
+ # Data cleaning (missing values, encoding)
 
-  # Setup and Load Dataset
+  - Setup and Load Dataset
    ```
 import pandas as pd
 import numpy as np
@@ -64,7 +64,7 @@ df = pd.read_csv('Turkiye_Student_Evaluation.csv')  # or .xlsx if it's an Excel 
 # Check the first few rows
 df.head()
 ```
-  # Basic Inspection
+  - Basic Inspection
   ```
 
 df.info()
@@ -72,11 +72,11 @@ df.describe()
 df.isnull().sum()
 ```
   # Data Cleaning
-  Handle Missing Values
+  - Handle Missing Values
   ```
 df = df.dropna()  # or use df.fillna(method='ffill') if necessary
 ```
-  Encode Categorical Variables
+ -  Encode Categorical Variables
   ```
 df['instructor_encoded'] = df['instructor'].astype('category').cat.codes
 df['class_encoded'] = df['class'].astype('category').cat.codes
@@ -85,7 +85,7 @@ df['class_encoded'] = df['class'].astype('category').cat.codes
 
 
 
--  # Normalization (Q1–Q28)
+  # Normalization (Q1–Q28)
   ```
 from sklearn.preprocessing import StandardScaler
 
@@ -93,44 +93,43 @@ numerical_cols = df.select_dtypes(include=['int64', 'float64']).columns
 scaler = StandardScaler()
 df[numerical_cols] = scaler.fit_transform(df[numerical_cols])
 ```
--  # Exploratory Data Analysis (EDA)
-  Correlation Matrix
+  # Exploratory Data Analysis (EDA)
+ -  Correlation Matrix
 ```
   plt.figure(figsize=(12, 8))
 sns.heatmap(df.corr(), annot=False, cmap='coolwarm')
 plt.title("Correlation Matrix")
 plt.show()
 ```
-This is the imange
 ![4a](https://github.com/user-attachments/assets/3348cfd9-59da-4003-b930-c9c7e357ec29)
-  Distribution of Performance
+  - Distribution of Performance
   ```
 sns.histplot(df['nb.repeat'], kde=False, bins=5)
 plt.title("Number of Times Students Repeated Course")
 plt.show()
 ```
 ![4b](https://github.com/user-attachments/assets/c748eee2-3972-425f-8e1c-95660f78cfc3)
-  Boxplot
+  - Boxplot
   ```
 sns.boxplot(x='attendance', y='nb.repeat', data=df)
 plt.title("Attendance vs Repeats")
 plt.show()
 ```
 ![4c](https://github.com/user-attachments/assets/3c463141-8f8e-4c4a-aa35-a1ee4ab3064c)
-# Define Target and Features
+- Define Target and Features
  ```
 df['target'] = df['nb.repeat'].apply(lambda x: 1 if x > 0 else 0)
 
 X = df.drop(['nb.repeat', 'target'], axis=1)
 y = df['target']
 ```
-# Train/Test Split
+-  Train/Test Split
 ```
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
-# Train Model (Logistic Regression or Decision Tree)
+-  Train Model (Logistic Regression or Decision Tree)
 ```
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
@@ -142,7 +141,7 @@ dt = DecisionTreeClassifier()
 dt.fit(X_train, y_train)
 
 ```
-# Evaluate the Model
+-  Evaluate the Model
 ```
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
@@ -163,10 +162,15 @@ df.to_csv('cleaned_student_evaluation.csv', index=False)
 ---
 
 ##  Power BI Dashboard Highlights
- Rename only the ones used in visuals
+ - Rename only the ones used in visuals
+
+
 instr_encoded → Instructor
+
 class_encoded → Class
+
 difficulty_encoded → Difficulty
+
 nb.repeat → Repeat Count
 
 -  Repeats by Instructor	Bar Chart
